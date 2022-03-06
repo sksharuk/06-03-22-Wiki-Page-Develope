@@ -1,0 +1,518 @@
+<html>
+	<head>
+		<title>Microsoft Teams</title>
+		<script src="https://kit.fontawesome.com/30d51dce59.js" crossorigin="anonymous"></script>
+		<style>
+			body{
+				margin : 0px;
+				padding: 0px;
+				
+			}
+
+			header{
+				display: block;
+				position: fixed;
+				top: 0px;
+				
+			}
+
+			#topBar{
+				width: 100%;
+				min-height:50px;
+				position: fixed;
+				top:0px;
+			}
+
+			.h1{
+				font-weight: 100;
+			}
+
+			.topBarMain{
+				width: 100%;
+				height: 50px;
+				background: #4e4766;
+				position: fixed;
+				left: 0px;
+			}
+
+			.topBarWrapper{
+				display: block;
+				overflow: hidden;
+			}
+
+			.primaryNavMenu{
+				display: block;
+				overflow: hidden;
+			}
+
+			.primaryWrapper{
+				display: block;
+				overflow: hidden;
+			}
+
+			.container{
+				padding-top: 0px;
+				margin-top: -3px;
+				min-height:20px;
+			}
+
+			ul.topBarSearch li {
+				float: left;
+			}
+
+			ul.topBarSearch {
+				list-style: none;
+				
+			}
+
+			#searchBtn{
+				background: white;
+				color: black;
+				height: 17px;
+				margin-right: 0px;
+				margin-top: 1px;
+				padding-left: 3px;
+				padding-top: 2px;
+				position: relative;
+				left: 23px;
+				border-radius: 7px;
+			}
+
+			#searchBox{
+				
+				border-radius: 5px;
+				
+			}
+
+			#searchId{
+				border-radius: 5px;
+				text-align: center;
+			}
+
+			input{
+				outline: none;
+				
+				border-radius: 2px;
+			}
+
+
+
+			.Item{
+				float:right;
+				width: 300px;
+				padding-left: 20px;
+				height: 43px;
+				margin-top: -14px;
+			}
+
+			ul.topBarItem {
+				list-style: none;
+				float: right;
+				width: 300px;
+			}
+
+			ul.topBarItem li {
+				float: right;
+				margin-right: 20px;
+			}
+
+			#itemDot{
+				margin: 0px 20px;
+			}
+
+			ul.topBarItem li#itemCircle .logo1{
+				height: 16px;
+				width: 16px;
+				background: white;
+				color: balck;
+				text-align: center;
+				padding: 10px;
+				border-radius : 50%;
+				margin-top: -9px;
+				margin-top: -19px'';
+			}
+
+			#itemGeekster{
+				color: white;
+				weight: 800;
+			}
+
+			#itemDot{
+				color: white;
+				weight: 800;
+				margin-top: -3px;
+			}
+
+			.primaryMain{
+				background:#f5f5f5;
+				margin-top: 50px;
+				width: 100vw;
+				height: 70px;
+				float: left;
+				box-shadow: 0px 1px 1px;
+			}
+
+			ul.mainMenuItem {
+				list-style: none;
+				float: left;
+				width: 80vw;
+			}
+
+			ul.mainMenuItem li {
+				float: left;
+				margin-right: 20px;
+			}
+
+			.logo2{
+				
+				margin-top: 7px;
+				
+				margin-left: 20px;
+			}
+
+			#primaryHeading{
+				color: Black;
+				weight: 900;
+				margin-top: -11px;
+			}
+
+			li.primaryMainMenuItem {
+				margin-top: 14px;
+				
+			}
+
+			li.primaryMainMenuItem a{
+				
+				text-decoration: none;
+				color: ##585353;
+				transition: 0.3s;
+			}
+
+			li.primaryMainMenuItem a:hover{
+				
+				color: black;
+				weight: 600;
+				font-family: arial-black;
+				font-size: 18px;
+			}
+
+			button#sliderWorkButton {
+				margin-top: 25px;
+				float: right;
+				margin-right: 34px;
+				background: white;
+				border: 1px solid #eee0e0;
+				width: 100px;
+				height: 29px;
+				border-radius: 5px;
+			}
+
+			.navMenu{
+				width: 100vw;
+				height: 33px;
+				background: #f5f5f5;
+				margin-top: -13px;
+				padding: 1px;
+			}
+
+			.navMenItem {
+				margin-top: -51px;
+				margin-left: 64px;
+				
+			}
+
+			#sss{
+				padding-top: 14px;
+				
+			}
+			.primaryNavMenu {
+				height: 33px;
+				width: 20vw;
+				float: left;
+			}
+
+			section{
+				padding : 80px 0px;
+			}
+
+
+			.sliderContent{
+				width: 90vw;
+				margin-left: 5vw;
+				background: white;
+				padding: 10px 10px;
+				min-height: 100vh;
+				margin: 81px 0px;
+				
+			}
+
+			section#homeSlider {
+				margin-top: 153px;
+				
+			}
+
+			.containerWrapper {
+				margin-top: -161px;
+			}
+
+			.heading{
+				font-size: 20px;
+			}
+
+			ul.content{
+				margin-left: 49px;
+			}
+
+			ul.content li{
+				list-style: none;
+			}
+
+			.class2{
+				position: relative;
+				left: 0px;
+				top: -12px;
+				
+			}
+
+			ul.content1{
+				margin-left: 49px;
+				
+			}
+
+			ul.content1 li{
+				list-style: none;
+			}
+
+			.class3{
+				box-shadow: 0px 1px 1px #faf0f0;
+				height: 30px;
+			}
+
+			.class4{
+				position: relative;
+				left: 0px;
+				top: -12px;
+				padding-top: 12px;
+			}
+
+			.class5{
+				box-shadow: 0px 1px 1px #faf0f0;
+				height: 30px;
+			}
+
+			.class6{
+				position: relative;
+				left: 0px;
+				top: -12px;
+				padding-top: 12px;
+			}
+
+			.class7{
+				font-size16px;
+			}
+
+
+		</style>
+	</head>
+	
+	<body>
+	
+		<header id = "topBar">
+		
+			<div class = "topBarMain">
+				<div class= "container">
+					<div class="topBarWrapper">
+						<div class = "search">
+							<ul class = "topBarSearch">
+									
+								<li id = "searchBtn"> <i class = "fas fa-search" aria-hidden = "true"> </i> </li>
+								<li id ="searchBox"><input id="searchId" type = "text" placeholder="       search" size="100"></li>
+									
+							</ul>
+							
+							
+							
+						</div>
+						
+						<div class = "Item">
+							<ul class = "topBarItem">
+								<li id = "itemCircle"><div class="logo1">S</div></li>
+								<li id ="itemGeekster">Geekster</li>	
+								<li id = "itemDot">...</li>
+								
+								
+									
+							</ul>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="primaryMain">
+				<div class="container">
+					<div = class="primaryWrapper">
+						<div class="primaryMenu">
+							<ul class = "mainMenuItem">
+									<li><div class="logo2"> <img src="geekster.png" height="30px" width="30px"> </div></li>
+									<li id = "primaryHeading"> <h2> <b>Feb22 Wbe Fundamental </b></h2> </li>
+									<li class= "primaryMainMenuItem"> <a href = "#"><b> Posts </b></a> </li>
+									<li class = "primaryMainMenuItem"> <a href = "#"><b> Files </b></a> </li>
+									<li class = "primaryMainMenuItem"> <a href = "#"><b> Wiki </b></a> </li>
+									
+									
+								</ul>
+						</div>
+						
+						<div class="primaryBtn">
+							<button id = "sliderWorkButton"> <i class="fa-solid fa-video" aria-hidden = "true"></i> Meet</button>
+						
+						</div>
+					</div>
+				</div>
+			<div>
+			
+			<div class="navMenu">
+				<div class="primaryNavMenu">
+					<div class="navMenItem" id = "sss">
+						<h1>-</h1>
+					</div>
+					<div class="navMenItem">
+						<h1>-</h1>
+					</div>
+					<div class="navMenItem">
+						<h1>-</h1>
+					</div>
+					
+				</div>
+			</div>
+			
+		</header>
+		
+		<section id = "homeSlider">
+			<div class="containerWrapper">
+				
+					<div class="sliderContent">
+						<ul class="content">
+							<li class="heading">
+								<div class="class1">
+									<p><b> Wiki</b></p>
+								</div>
+							</li>
+							
+							<li>
+								<div class="class2">
+									<p>Last edited: Yesterday</p>
+								</div>
+							</li>	
+						</ul>
+						
+						<ul class="content1">
+							<li class="heading">
+								<div class="class3">
+									<p><b> Class Link</b></p>
+								</div>
+							</li>
+							
+							<li>
+								<div class="class4">
+									<p><a href="https://us06web.zoom.us/j/7749007179">https://us06web.zoom.us/j/7749007179</a></p>
+								</div>
+							</li>
+						</ul>
+						
+						<ul class="content1">
+							<li class="heading">
+								<div class="class5">
+									<p><b> Class Recording</b></p>
+								</div>
+							</li>
+							
+							<li>
+								<div class="class6">
+									<p><a href="https://docs.google.com/spreadsheets/d/1UE5X42edFbZwoQ2auEclchtsLwOjuQiv2wYVW1SkSas/edit?usp=sharing">https://docs.google.com/spreadsheets/d/1UE5X42edFbZwoQ2auEclchtsLwOjuQiv2wYVW1SkSas/edit?usp=sharing</a></p>
+								</div>
+							</li>
+						</ul>
+						
+						<ul class="content1">
+							<li class="heading">
+								<div class="class5">
+									<p><b> Class Code Link</b></p>
+								</div>
+							</li>
+							
+							<li>
+								<div class="class6">
+									<p><a href="https://github.com/geeksterin/Feb22-Web-Fundamentals.git">https://github.com/geeksterin/Feb22-Web-Fundamentals.git</a></p>
+								</div>
+							</li>
+						</ul>
+						
+						<ul class="content1">
+							<li class="heading">
+								<div class="class5">
+									<p><b> Avenger Sheet</b></p>
+								</div>
+							</li>
+							
+							<li>
+								<div class="class6">
+									<p><a href="https://docs.google.com/spreadsheets/d/1a46Npq_wGZu3FoA8l1mMJOKhn-t1u4ehiuNMTuFoSrE/edit?usp=sharing">https://docs.google.com/spreadsheets/d/1a46Npq_wGZu3FoA8l1mMJOKhn-t1u4ehiuNMTuFoSrE/edit?usp=sharing</a></p>
+								</div>
+							</li>
+						</ul>
+						
+						<ul class="content1">
+							<li class="heading">
+								<div class="class5">
+									<p><b> Feedback Form</b></p>
+								</div>
+							</li>
+							
+							<li>
+								<div class="class6">
+									<p><a href="https://docs.google.com/forms/d/e/1FAIpQLScOdVG3xJsp7JgraFlg8__-wwNkqNDt0NgUl8c8YdopRqg1oQ/viewform">https://docs.google.com/forms/d/e/1FAIpQLScOdVG3xJsp7JgraFlg8__-wwNkqNDt0NgUl8c8YdopRqg1oQ/viewform</a></p>
+								</div>
+							</li>
+						</ul>
+						
+						<ul class="content1">
+							<li class="heading">
+								<div class="class5">
+									<p><b> Important Link</b></p>
+								</div>
+							</li>
+							<li>
+								<div class="class7">
+									<p><b> Mock interview request form:</b></p>
+								</div>
+							</li>
+							
+							<li>
+								<div class="class7">
+									<p> Mock interview request form:</p>
+								</div>
+							</li>
+							
+							<li>
+								<div class="class7">
+									<p> Mentor Session request form:</p>
+								</div>
+							</li>
+							
+							<li>
+								<div class="">
+									<p><a href="https://docs.google.com/forms/d/e/1FAIpQLSczy0MG9MAC0LRG-U18tquZmXjDHjIKdlHpFAWgy1Pk7y4LTQ/viewform">https://docs.google.com/forms/d/e/1FAIpQLSczy0MG9MAC0LRG-U18tquZmXjDHjIKdlHpFAWgy1Pk7y4LTQ/viewform</a></p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				
+			</div>
+		
+		</section>
+	
+	</body>
+
+</html>
